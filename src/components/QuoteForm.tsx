@@ -57,7 +57,7 @@ export function QuoteForm({ compact = false, defaultService = '', defaultLocalit
 
     if (!supabase) {
       setStatus('error')
-      setMessage('Formularul are nevoie de configurarea Supabase. Până atunci, scrie-ne la support@steficlean.com.')
+      setMessage('Formularul are nevoie de configurarea Supabase. Până atunci, scrie-ne la contact@cleanconstruct.ro.')
       return
     }
 

@@ -21,7 +21,7 @@ export function Layout() {
       <Footer />
       <nav className="mobile-contact-bar" aria-label="Contact rapid">
         <a href={`tel:${phone.replace(/[^+\d]/g, '')}`}><Phone />Sună</a>
-        {whatsapp ? <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer"><MessageCircle />WhatsApp</a> : <a href="mailto:support@steficlean.com"><Mail />E-mail</a>}
+        {whatsapp ? <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer"><MessageCircle />WhatsApp</a> : <a href="mailto:contact@cleanconstruct.ro"><Mail />E-mail</a>}
         <Link to="/contact/#oferta"><MessageCircle />Ofertă</Link>
       </nav>
     </>

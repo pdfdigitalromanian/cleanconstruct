@@ -43,6 +43,10 @@ Datele publice de contact și informațiile comerciale de mai jos sunt destinate
 - [Introducere în finisajele interioare: rol, importanță și tendințe | CleanConstruct](https://cleanconstruct.ro/ai-content/introducere-in-finisajele-interioare-rol-importanta-si-tendinte.md): Finisajele interioare reprezintă etapa finală și esențială în amenajarea unui spațiu, fiind cele care definesc atât aspectul estetic, cât și funcționalitatea…
 - [Introducere în curățenia post-construcție: ce o face diferită | CleanConstruct](https://cleanconstruct.ro/ai-content/introducere-in-curatenia-post-constructie-ce-o-face-diferita.md): Curățenia după constructor reprezintă una dintre cele mai complexe și solicitante etape în finalizarea unui proiect de renovare sau construcție. Spre…
 
+## Informații legale
+
+- [Politica de cookie-uri | CleanConstruct](https://cleanconstruct.ro/ai-content/politica-de-cookies.md): Află ce tehnologii de analiză folosește CleanConstruct, ce date colectează și cum îți poți modifica alegerea.
+
 ## Date comerciale
 
 - Denumire legală: STEFI CLEAN CONSTRUCT S.R.L.
@@ -50,5 +54,5 @@ Datele publice de contact și informațiile comerciale de mai jos sunt destinate
 - Nr. Registrul Comerțului: J51/101/2021
 - EUID: ROONRC.J51/101/2021
 - Telefon: +40 726 631 898
-- E-mail: support@steficlean.com
+- E-mail: contact@cleanconstruct.ro
 - Arie declarată: București și Ilfov, România

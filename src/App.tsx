@@ -1,10 +1,12 @@
 import { Analytics } from '@vercel/analytics/react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { CookieConsent } from './components/CookieConsent'
 import { Layout } from './components/Layout'
 import { AboutPage } from './pages/AboutPage'
 import { BlogPage } from './pages/BlogPage'
 import { ContactPage } from './pages/ContactPage'
 import { ContentPage } from './pages/ContentPage'
+import { CookiePolicyPage } from './pages/CookiePolicyPage'
 import { HomePage } from './pages/HomePage'
 import { LocationPage } from './pages/LocationPage'
 import { NotFoundPage } from './pages/NotFoundPage'
@@ -27,10 +29,12 @@ export default function App() {
           <Route path="servicii-ilfov" element={<LocationPage area="Ilfov" />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="politica-de-cookies" element={<CookiePolicyPage />} />
           <Route path=":slug" element={<ContentPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
+      <CookieConsent />
       <Analytics />
     </>
   )

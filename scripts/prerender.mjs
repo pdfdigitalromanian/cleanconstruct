@@ -111,6 +111,7 @@ for (const route of prerenderRoutes) {
 const recordsFor = (routes) => routes.map((route) => routeRecords.find((record) => record.route === route)).filter(Boolean)
 const mainRoutes = recordsFor(prerenderRouteGroups.main)
 const locationRoutes = recordsFor(prerenderRouteGroups.locations)
+const legalRoutes = recordsFor(prerenderRouteGroups.legal)
 const serviceRoutes = recordsFor(prerenderRouteGroups.services)
 const postRoutes = recordsFor(prerenderRouteGroups.posts)
 const conciseDescription = (value) => value.length > 170
@@ -118,7 +119,7 @@ const conciseDescription = (value) => value.length > 170
   : value
 const formatLinks = (records) => records.map(({ markdownPath, seo }) => `- [${seo.title}](${siteUrl}${markdownPath}): ${conciseDescription(seo.description)}`).join('\n')
 
-const llms = `# CleanConstruct\n\n> STEFI CLEAN CONSTRUCT S.R.L. oferă servicii profesionale de curățenie, curățenie după constructor, renovări, finisaje și construcții în București și Ilfov.\n\nDatele publice de contact și informațiile comerciale de mai jos sunt destinate atât utilizatorilor, cât și sistemelor de căutare și asistenților AI. Pentru conținutul integral într-un singur fișier consultați [llms-full.txt](${siteUrl}/llms-full.txt).\n\n## Pagini principale\n\n${formatLinks(mainRoutes)}\n\n## Acoperire locală\n\n${formatLinks(locationRoutes)}\n\n## Servicii\n\n${formatLinks(serviceRoutes)}\n\n## Ghiduri\n\n${formatLinks(postRoutes)}\n\n## Date comerciale\n\n- Denumire legală: STEFI CLEAN CONSTRUCT S.R.L.\n- CUI: 43678075\n- Nr. Registrul Comerțului: J51/101/2021\n- EUID: ROONRC.J51/101/2021\n- Telefon: +40 726 631 898\n- E-mail: support@steficlean.com\n- Arie declarată: București și Ilfov, România\n`
+const llms = `# CleanConstruct\n\n> STEFI CLEAN CONSTRUCT S.R.L. oferă servicii profesionale de curățenie, curățenie după constructor, renovări, finisaje și construcții în București și Ilfov.\n\nDatele publice de contact și informațiile comerciale de mai jos sunt destinate atât utilizatorilor, cât și sistemelor de căutare și asistenților AI. Pentru conținutul integral într-un singur fișier consultați [llms-full.txt](${siteUrl}/llms-full.txt).\n\n## Pagini principale\n\n${formatLinks(mainRoutes)}\n\n## Acoperire locală\n\n${formatLinks(locationRoutes)}\n\n## Servicii\n\n${formatLinks(serviceRoutes)}\n\n## Ghiduri\n\n${formatLinks(postRoutes)}\n\n## Informații legale\n\n${formatLinks(legalRoutes)}\n\n## Date comerciale\n\n- Denumire legală: STEFI CLEAN CONSTRUCT S.R.L.\n- CUI: 43678075\n- Nr. Registrul Comerțului: J51/101/2021\n- EUID: ROONRC.J51/101/2021\n- Telefon: +40 726 631 898\n- E-mail: contact@cleanconstruct.ro\n- Arie declarată: București și Ilfov, România\n`
 
 await writeFile(resolve(distDirectory, 'llms.txt'), llms)
 await writeFile(resolve(distDirectory, 'llms-full.txt'), `${llms}\n\n---\n\n${markdownDocuments.join('\n\n---\n\n')}`)

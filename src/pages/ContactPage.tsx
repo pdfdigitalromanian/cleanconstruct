@@ -31,7 +31,7 @@ export function ContactPage() {
             <p>Trimite-ne câteva detalii despre serviciu, localitate, suprafață și interval. Fotografiile sunt binevenite.</p>
             <ul>
               <li><span><Phone /></span><div><small>Telefon</small><a href={`tel:${phone.replace(/[^+\d]/g, '')}`}>{phone}</a></div></li>
-              <li><span><Mail /></span><div><small>E-mail</small><a href="mailto:support@steficlean.com">support@steficlean.com</a></div></li>
+              <li><span><Mail /></span><div><small>E-mail</small><a href="mailto:contact@cleanconstruct.ro">contact@cleanconstruct.ro</a></div></li>
               <li><span><MapPin /></span><div><small>Zonă de servicii</small><strong>București și Ilfov</strong></div></li>
               <li><span><Clock3 /></span><div><small>Program contact</small><strong>Luni – Vineri, 08:00 – 21:00</strong></div></li>
             </ul>

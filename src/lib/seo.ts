@@ -9,7 +9,7 @@ export const businessSchema = {
   url: siteUrl,
   logo: `${siteUrl}/assets/brand/logo-mark.png`,
   image: `${siteUrl}/assets/site/hero-before-after.webp`,
-  email: 'support@steficlean.com',
+  email: 'contact@cleanconstruct.ro',
   telephone: '+40726631898',
   description: 'Servicii profesionale de curățenie, curățenie după constructor, renovare, construcții și finisaje.',
   areaServed: [
@@ -24,7 +24,7 @@ export const businessSchema = {
     '@type': 'ContactPoint',
     contactType: 'customer service',
     telephone: '+40726631898',
-    email: 'support@steficlean.com',
+    email: 'contact@cleanconstruct.ro',
     availableLanguage: ['Romanian'],
   },
 }

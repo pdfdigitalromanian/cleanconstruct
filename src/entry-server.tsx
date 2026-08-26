@@ -17,11 +17,13 @@ const coreRoutes = [
 ]
 
 const locationRoutes = ['/servicii-bucuresti/', '/servicii-ilfov/']
+const legalRoutes = ['/politica-de-cookies/']
 const serviceRoutes = services.map((service) => `/${service.slug}/`)
 const postRoutes = localPosts.map((post) => `/${post.slug}/`)
 
 export const prerenderRoutes = [
   ...coreRoutes,
+  ...legalRoutes,
   ...serviceRoutes,
   ...postRoutes,
 ]
@@ -29,6 +31,7 @@ export const prerenderRoutes = [
 export const prerenderRouteGroups = {
   main: coreRoutes.filter((route) => !locationRoutes.includes(route)),
   locations: locationRoutes,
+  legal: legalRoutes,
   services: serviceRoutes,
   posts: postRoutes,
 }
@@ -45,6 +48,11 @@ export const prerenderRouteMetadata = Object.fromEntries([
     lastModified: currentContentDate,
     changeFrequency: 'monthly',
     priority: '0.9',
+  }]),
+  ...legalRoutes.map((route) => [route, {
+    lastModified: currentContentDate,
+    changeFrequency: 'yearly',
+    priority: '0.3',
   }]),
   ...localPosts.map((post) => [`/${post.slug}/`, {
     lastModified: post.modifiedAt.slice(0, 10),

@@ -1,6 +1,7 @@
 import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { cleaningServices, constructionServices } from '../data/services'
+import { openCookieSettings } from './CookieConsent'
 
 export function Footer() {
   const phone = import.meta.env.VITE_BUSINESS_PHONE || '+40 726 631 898'
@@ -27,7 +28,7 @@ export function Footer() {
           <h2>Contact</h2>
           <ul className="contact-list">
             <li><Phone size={17} /><a href={`tel:${phone.replace(/[^+\d]/g, '')}`}>{phone}</a></li>
-            <li><Mail size={17} /><a href="mailto:support@steficlean.com">support@steficlean.com</a></li>
+            <li><Mail size={17} /><a href="mailto:contact@cleanconstruct.ro">contact@cleanconstruct.ro</a></li>
             <li><MapPin size={17} /><span><Link to="/servicii-bucuresti/">București</Link> și <Link to="/servicii-ilfov/">Ilfov</Link>, România</span></li>
           </ul>
         </div>
@@ -35,6 +36,10 @@ export function Footer() {
       <div className="footer-bottom shell">
         <span>© {new Date().getFullYear()} STEFI CLEAN CONSTRUCT S.R.L.</span>
         <span>CUI: 43678075 · J51/101/2021 · EUID: ROONRC.J51/101/2021</span>
+        <nav className="footer-legal-links" aria-label="Confidențialitate">
+          <Link to="/politica-de-cookies/">Politica de cookie-uri</Link>
+          <button type="button" onClick={openCookieSettings}>Setări cookie</button>
+        </nav>
         <a href="https://digitalromanian.com" target="_blank" rel="noreferrer">Creat și dezvoltat de digitalromanian.com</a>
       </div>
     </footer>
