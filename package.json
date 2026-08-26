@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "dev:tina": "tinacms dev -c \"vite\"",
-    "prebuild": "node --input-type=module -e \"import {execSync} from 'node:child_process'; if(process.env.TINA_CLIENT_ID){execSync('npx tinacms build',{stdio:'inherit'})} else {console.log('Skipping tinacms build: TINA_CLIENT_ID not set')}\"",
     "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir .prerender && node scripts/prerender.mjs",
     "preview": "vite preview",
     "lint": "tsc -b --pretty false",
