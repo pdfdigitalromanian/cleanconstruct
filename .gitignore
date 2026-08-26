@@ -1,0 +1,15 @@
+node_modules
+dist
+.prerender
+.env
+.env.local
+.vercel
+tina/__generated__
+public/admin/index.html
+public/admin/assets/
+*.log
+.DS_Store
+coverage
+artifacts
+public_html (3)
+SEO & Local Search Audit Report.pdf
