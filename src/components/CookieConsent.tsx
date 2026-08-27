@@ -1,10 +1,9 @@
 import { X } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 type ConsentPreference = 'analytics' | 'necessary' | null
 
-const googleAnalyticsId = 'G-FEWRDX9CWL'
 const storageKey = 'cleanconstruct_privacy_preferences_v2'
 const previousStorageKey = 'cleanconstruct_privacy_preferences_v1'
 const openSettingsEvent = 'cleanconstruct:open-cookie-settings'
@@ -28,32 +27,6 @@ const readPreference = (): ConsentPreference => {
   }
 }
 
-const initializeGoogleAnalytics = () => {
-  if (document.getElementById('google-analytics-tag')) return
-
-  window.dataLayer = window.dataLayer ?? []
-  window.gtag = (...args: unknown[]) => window.dataLayer?.push(args)
-  window.gtag('consent', 'default', {
-    analytics_storage: 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-  })
-  window.gtag('consent', 'update', { analytics_storage: 'granted' })
-  window.gtag('js', new Date())
-  window.gtag('config', googleAnalyticsId, {
-    allow_ad_personalization_signals: false,
-    allow_google_signals: false,
-    send_page_view: false,
-  })
-
-  const script = document.createElement('script')
-  script.id = 'google-analytics-tag'
-  script.async = true
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`
-  document.head.appendChild(script)
-}
-
 const deleteGoogleAnalyticsCookies = () => {
   const cookieNames = document.cookie
     .split(';')
@@ -71,7 +44,6 @@ export const openCookieSettings = () => {
 }
 
 export function CookieConsent() {
-  const { pathname, search } = useLocation()
   const [ready, setReady] = useState(false)
   const [preference, setPreference] = useState<ConsentPreference>(null)
   const [open, setOpen] = useState(false)
@@ -93,17 +65,6 @@ export function CookieConsent() {
     return () => window.removeEventListener(openSettingsEvent, showSettings)
   }, [])
 
-  useEffect(() => {
-    if (preference !== 'analytics') return
-
-    initializeGoogleAnalytics()
-    window.gtag?.('event', 'page_view', {
-      page_location: window.location.href,
-      page_path: `${pathname}${search}`,
-      page_title: document.title,
-    })
-  }, [pathname, preference, search])
-
   const savePreference = (nextPreference: Exclude<ConsentPreference, null>) => {
     try {
       window.localStorage.setItem(storageKey, JSON.stringify({
@@ -115,8 +76,11 @@ export function CookieConsent() {
       // Continue for this browsing session even if persistent storage is blocked.
     }
 
+    window.gtag?.('consent', 'update', {
+      analytics_storage: nextPreference === 'analytics' ? 'granted' : 'denied',
+    })
+
     if (preference === 'analytics' && nextPreference === 'necessary') {
-      window.gtag?.('consent', 'update', { analytics_storage: 'denied' })
       deleteGoogleAnalyticsCookies()
       window.location.reload()
       return
@@ -144,7 +108,7 @@ export function CookieConsent() {
           <div>
             <span className="eyebrow">Preferințe de confidențialitate</span>
             <h2 id="cookie-title">Tu alegi dacă ne ajuți cu statisticile.</h2>
-            <p id="cookie-description">Google Analytics se încarcă numai dacă accepți. Vercel Web Analytics rămâne activ pentru statistici agregate și nu folosește cookie-uri.</p>
+            <p id="cookie-description">Google Analytics folosește stocarea pentru analiză numai dacă accepți. Vercel Web Analytics rămâne activ pentru statistici agregate și nu folosește cookie-uri.</p>
             <Link to="/politica-de-cookies/">Vezi politica de cookie-uri</Link>
           </div>
           <div className="cookie-actions">

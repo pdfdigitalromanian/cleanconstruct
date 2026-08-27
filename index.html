@@ -1,6 +1,31 @@
 <!doctype html>
 <html lang="ro">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      var cleanConstructAnalyticsConsent = false;
+      try {
+        var cleanConstructPrivacyPreference = JSON.parse(localStorage.getItem('cleanconstruct_privacy_preferences_v2') || 'null');
+        cleanConstructAnalyticsConsent = cleanConstructPrivacyPreference && cleanConstructPrivacyPreference.version === 2 && cleanConstructPrivacyPreference.analytics === true;
+      } catch (error) {
+        cleanConstructAnalyticsConsent = false;
+      }
+
+      gtag('consent', 'default', {
+        analytics_storage: cleanConstructAnalyticsConsent ? 'granted' : 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FEWRDX9CWL"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-FEWRDX9CWL');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#053564" />

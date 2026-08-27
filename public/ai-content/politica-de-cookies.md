@@ -10,8 +10,8 @@ Controlul tău
 
 # Politica de cookie-uri
 
-Elementele de analiză sunt opționale și se încarcă numai după ce le accepți.
-Ultima actualizare: 26 august 2026
+Cookie-urile de analiză sunt opționale și sunt activate numai după ce le accepți.
+Ultima actualizare: 27 august 2026
 
 ## 1. Ce sunt cookie-urile
 
@@ -27,7 +27,7 @@ Salvăm cheia cleanconstruct_privacy_preferences_v2
 Cu acordul tău, încărcăm Google Analytics 4 prin identificatorul de măsurare G-FEWRDX9CWL
 . Serviciul ne ajută să înțelegem, în mod agregat, ce pagini sunt vizitate, sursa aproximativă a traficului, tipul dispozitivului și interacțiunile cu site-ul. Am dezactivat semnalele Google și personalizarea publicitară în configurația site-ului.
 
-Folosim implementarea de bază a modului de consimțământ: eticheta Google este blocată complet până când selectezi „Accept statistici”. Nu trimitem către Google câmpurile completate în formularul de ofertă.
+Eticheta Google este instalată direct în antetul fiecărei pagini și folosește modul avansat de consimțământ. Înainte de alegere, stocarea pentru analiză și publicitate este setată la „refuzat”; Google poate primi semnale de măsurare limitate, fără cookie-uri de analiză. După „Accept statistici”, stocarea pentru Google Analytics este permisă. Nu trimitem către Google câmpurile completate în formularul de ofertă.
 
 Cookie
 Scop

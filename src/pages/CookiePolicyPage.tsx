@@ -1,6 +1,6 @@
 import { Seo } from '../components/Seo'
 
-const updatedAt = '26 august 2026'
+const updatedAt = '27 august 2026'
 
 export function CookiePolicyPage() {
   return (
@@ -10,7 +10,7 @@ export function CookiePolicyPage() {
         <div className="shell legal-header-inner">
           <span className="eyebrow">Controlul tău</span>
           <h1>Politica de cookie-uri</h1>
-          <p>Elementele de analiză sunt opționale și se încarcă numai după ce le accepți.</p>
+          <p>Cookie-urile de analiză sunt opționale și sunt activate numai după ce le accepți.</p>
           <small>Ultima actualizare: {updatedAt}</small>
         </div>
       </header>
@@ -27,7 +27,7 @@ export function CookiePolicyPage() {
         <section>
           <h2>3. Google Analytics</h2>
           <p>Cu acordul tău, încărcăm Google Analytics 4 prin identificatorul de măsurare <code>G-FEWRDX9CWL</code>. Serviciul ne ajută să înțelegem, în mod agregat, ce pagini sunt vizitate, sursa aproximativă a traficului, tipul dispozitivului și interacțiunile cu site-ul. Am dezactivat semnalele Google și personalizarea publicitară în configurația site-ului.</p>
-          <p>Folosim implementarea de bază a modului de consimțământ: eticheta Google este blocată complet până când selectezi „Accept statistici”. Nu trimitem către Google câmpurile completate în formularul de ofertă.</p>
+          <p>Eticheta Google este instalată direct în antetul fiecărei pagini și folosește modul avansat de consimțământ. Înainte de alegere, stocarea pentru analiză și publicitate este setată la „refuzat”; Google poate primi semnale de măsurare limitate, fără cookie-uri de analiză. După „Accept statistici”, stocarea pentru Google Analytics este permisă. Nu trimitem către Google câmpurile completate în formularul de ofertă.</p>
           <div className="legal-table-wrap">
             <table>
               <thead><tr><th>Cookie</th><th>Scop</th><th>Durată uzuală</th></tr></thead>
