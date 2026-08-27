@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom'
 import { cleaningServices, constructionServices } from '../data/services'
 import { openCookieSettings } from './CookieConsent'
 
-type SocialPlatform = 'facebook' | 'twitter' | 'youtube'
+type SocialPlatform = 'facebook' | 'instagram' | 'tiktok'
 
 const socialLinks: { label: string; platform: SocialPlatform; href: string }[] = [
-  { label: 'Facebook', platform: 'facebook', href: import.meta.env.VITE_FACEBOOK_URL || 'https://facebook.com' },
-  { label: 'Twitter', platform: 'twitter', href: import.meta.env.VITE_TWITTER_URL || 'https://twitter.com' },
-  { label: 'YouTube', platform: 'youtube', href: import.meta.env.VITE_YOUTUBE_URL || 'https://youtube.com' },
+  { label: 'Facebook', platform: 'facebook', href: import.meta.env.VITE_FACEBOOK_URL || 'https://www.facebook.com/profile.php?id=61573669424226' },
+  { label: 'Instagram', platform: 'instagram', href: import.meta.env.VITE_INSTAGRAM_URL || '#' },
+  { label: 'TikTok', platform: 'tiktok', href: import.meta.env.VITE_TIKTOK_URL || '#' },
 ]
 
 function SocialIcon({ platform }: { platform: SocialPlatform }) {
   if (platform === 'facebook') {
     return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5H17V3.6c-.5-.1-1.5-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5V13h2.8v8h3.4Z" /></svg>
   }
-  if (platform === 'twitter') {
-    return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.7 3h3.1l-6.7 7.7L23 21h-6.2l-4.9-6.4L6.3 21H3.2l7.2-8.2L2.8 3h6.4l4.4 5.8L18.7 3Zm-1.1 16h1.7L8.2 4.9H6.4L17.6 19Z" /></svg>
+  if (platform === 'instagram') {
+    return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.2 2A3 3 0 0 0 4 7v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.3 1.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" /></svg>
   }
-  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15.3V8.7l5.8 3.3-5.8 3.3Z" /></svg>
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 2c.3 2.4 1.7 3.8 4.1 4v3.1a8.2 8.2 0 0 1-4-1v6.1a6.2 6.2 0 1 1-5.4-6.1v3.2a3.1 3.1 0 1 0 2.2 3V2h3.1Z" /></svg>
 }
 
 export function Footer() {
@@ -37,7 +37,16 @@ export function Footer() {
             <span>Urmărește-ne</span>
             <div>
               {socialLinks.map((social) => (
-                <a href={social.href} target="_blank" rel="noreferrer" aria-label={`CleanConstruct pe ${social.label}`} title={social.label} key={social.platform}>
+                <a
+                  href={social.href}
+                  target={social.href === '#' ? undefined : '_blank'}
+                  rel={social.href === '#' ? undefined : 'noreferrer'}
+                  aria-label={social.href === '#' ? `${social.label} — în curând` : `CleanConstruct pe ${social.label}`}
+                  aria-disabled={social.href === '#' ? true : undefined}
+                  title={social.href === '#' ? `${social.label} — în curând` : social.label}
+                  onClick={social.href === '#' ? (event) => event.preventDefault() : undefined}
+                  key={social.platform}
+                >
                   <SocialIcon platform={social.platform} />
                 </a>
               ))}
