@@ -72,7 +72,7 @@ h1,
 h2,
 h3 {
   color: var(--navy);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   line-height: 1.08;
   text-wrap: balance;
@@ -437,7 +437,7 @@ h3 {
 .mega-title {
   margin-bottom: 6px;
   color: var(--navy);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -591,7 +591,7 @@ h3 {
 
 .trust-note strong {
   flex: 0 0 115px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.25rem;
   line-height: 1.15;
   text-transform: uppercase;
@@ -1474,7 +1474,7 @@ h3 {
   gap: 20px;
   padding: 18px 0;
   border-bottom: 1px solid rgba(255, 255, 255, .18);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -1534,7 +1534,7 @@ h3 {
   gap: 30px;
   padding: 24px 0;
   cursor: pointer;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.35rem;
   font-weight: 600;
   list-style: none;
@@ -1599,7 +1599,7 @@ h3 {
   justify-content: space-between;
   gap: 20px;
   color: var(--white);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.45rem;
 }
 
@@ -1921,7 +1921,7 @@ h3 {
 }
 
 .article-layout aside > span {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1944,7 +1944,7 @@ h3 {
 .article-content h4 {
   margin: 2.15em 0 .8em;
   color: var(--navy);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   line-height: 1.2;
 }
 
