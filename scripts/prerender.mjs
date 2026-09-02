@@ -135,4 +135,8 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://w
 await writeFile(resolve(distDirectory, 'sitemap.xml'), sitemap)
 await writeFile(resolve(publicDirectory, 'sitemap.xml'), sitemap)
 
-console.log(`Prerendered ${prerenderRoutes.length} routes, Markdown mirrors, llms files and sitemap.`)
+const robots = `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${siteUrl}/sitemap.xml\n`
+await writeFile(resolve(distDirectory, 'robots.txt'), robots)
+await writeFile(resolve(publicDirectory, 'robots.txt'), robots)
+
+console.log(`Prerendered ${prerenderRoutes.length} routes, Markdown mirrors, llms files, sitemap and robots.txt.`)

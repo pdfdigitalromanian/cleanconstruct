@@ -10,7 +10,9 @@ import { CookiePolicyPage } from './pages/CookiePolicyPage'
 import { HomePage } from './pages/HomePage'
 import { LocationPage } from './pages/LocationPage'
 import { NotFoundPage } from './pages/NotFoundPage'
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage'
 import { ServicesPage } from './pages/ServicesPage'
+import { TermsPage } from './pages/TermsPage'
 
 export default function App() {
   return (
@@ -29,7 +31,9 @@ export default function App() {
           <Route path="servicii-ilfov" element={<LocationPage area="Ilfov" />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="politica-de-confidentialitate" element={<PrivacyPolicyPage />} />
           <Route path="politica-de-cookies" element={<CookiePolicyPage />} />
+          <Route path="termeni-si-conditii" element={<TermsPage />} />
           <Route path=":slug" element={<ContentPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

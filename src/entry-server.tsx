@@ -17,7 +17,11 @@ const coreRoutes = [
 ]
 
 const locationRoutes = ['/servicii-bucuresti/', '/servicii-ilfov/']
-const legalRoutes = ['/politica-de-cookies/']
+const legalRoutes = [
+  '/politica-de-confidentialitate/',
+  '/politica-de-cookies/',
+  '/termeni-si-conditii/',
+]
 const serviceRoutes = services.map((service) => `/${service.slug}/`)
 const postRoutes = localPosts.map((post) => `/${post.slug}/`)
 
@@ -36,7 +40,7 @@ export const prerenderRouteGroups = {
   posts: postRoutes,
 }
 
-const currentContentDate = '2026-08-26'
+const currentContentDate = '2026-09-02'
 
 export const prerenderRouteMetadata = Object.fromEntries([
   ...coreRoutes.map((route) => [route, {

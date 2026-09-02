@@ -1,4 +1,4 @@
-import { X } from 'lucide-react'
+import { Cookie, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -116,7 +116,11 @@ export function CookieConsent() {
             <button className="button" type="button" onClick={() => savePreference('analytics')}>Accept statistici</button>
           </div>
         </aside>
-      ) : null}
+      ) : (
+        <button className="cookie-fab" type="button" onClick={() => setOpen(true)} aria-label="Deschide setările cookie" title="Setări cookie">
+          <Cookie aria-hidden="true" />
+        </button>
+      )}
     </>
   )
 }

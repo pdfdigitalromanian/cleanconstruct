@@ -1,5 +1,6 @@
 import { ArrowUpRight, CheckCircle2, ImagePlus, Loader2 } from 'lucide-react'
 import { useId, useState, type ChangeEvent, type FormEvent } from 'react'
+import { Link } from 'react-router-dom'
 import { services } from '../data/services'
 import { supabase } from '../lib/supabase'
 
@@ -147,7 +148,7 @@ export function QuoteForm({ compact = false, defaultService = '', defaultLocalit
         </button>
       </div>
       {message ? <div className={`form-message ${status}`} role="status">{status === 'success' ? <CheckCircle2 aria-hidden="true" /> : null}{message}</div> : null}
-      <p className="privacy-note">Prin trimiterea formularului ești de acord să folosim datele doar pentru a răspunde solicitării tale.</p>
+      <p className="privacy-note">Folosim datele pentru a analiza și răspunde solicitării tale. Vezi <Link to="/politica-de-confidentialitate/">Politica de confidențialitate</Link>.</p>
     </form>
   )
 }

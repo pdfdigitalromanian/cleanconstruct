@@ -40,7 +40,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-The site still renders all local posts when Supabase is not configured. The quote form intentionally displays a configuration message until valid Supabase browser credentials are present. `npm run build` pre-renders every known route and regenerates the sitemap, AI-readable files and Markdown mirrors.
+The site still renders all local posts when Supabase is not configured. The quote form intentionally displays a configuration message until valid Supabase browser credentials are present. `npm run build` pre-renders every known route and regenerates the sitemap, `robots.txt`, AI-readable files and Markdown mirrors.
 
 ## Set up Supabase
 

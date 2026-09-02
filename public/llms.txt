@@ -45,7 +45,9 @@ Datele publice de contact și informațiile comerciale de mai jos sunt destinate
 
 ## Informații legale
 
+- [Politica de confidențialitate | CleanConstruct](https://cleanconstruct.ro/ai-content/politica-de-confidentialitate.md): Află ce date personale prelucrează CleanConstruct, de ce le folosim, cât timp le păstrăm și ce drepturi ai.
 - [Politica de cookie-uri | CleanConstruct](https://cleanconstruct.ro/ai-content/politica-de-cookies.md): Află ce tehnologii de analiză folosește CleanConstruct, ce date colectează și cum îți poți modifica alegerea.
+- [Termeni și condiții | CleanConstruct](https://cleanconstruct.ro/ai-content/termeni-si-conditii.md): Condițiile de utilizare a site-ului CleanConstruct și informații despre solicitarea și contractarea serviciilor.
 
 ## Date comerciale
 

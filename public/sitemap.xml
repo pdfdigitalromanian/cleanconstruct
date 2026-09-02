@@ -2,115 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cleanconstruct.ro/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/despre-noi/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/servicii/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/servicii-bucuresti/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/servicii-ilfov/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/contact/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/blog/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://cleanconstruct.ro/politica-de-confidentialitate/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://cleanconstruct.ro/politica-de-cookies/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://cleanconstruct.ro/termeni-si-conditii/</loc>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/curatenie-rezidentiala/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/curatenie-birouri/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/curatenie-spatii-comerciale/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/curatenie-dupa-constructor/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/curatenie-dupa-renovare/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/curatenie-generala/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/constructii-cladiri/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/constructii-case/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/renovari/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/remodelare/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cleanconstruct.ro/vopsire-finisaje/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

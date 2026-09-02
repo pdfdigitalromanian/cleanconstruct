@@ -70,11 +70,20 @@ export function Footer() {
           </ul>
         </div>
       </div>
+      <div className="footer-compliance shell">
+        <a href="https://reclamatiisal.anpc.ro" target="_blank" rel="noreferrer" aria-label="Soluționarea Alternativă a Litigiilor prin ANPC">
+          <img src="/assets/legal/anpc.jpeg" alt="Soluționarea Alternativă a Litigiilor — ANPC" width="250" height="50" loading="lazy" />
+        </a>
+        <p>Consumatorii pot apela la procedura SAL pentru soluționarea amiabilă a eventualelor litigii.</p>
+      </div>
       <div className="footer-bottom shell">
         <span>© {new Date().getFullYear()} STEFI CLEAN CONSTRUCT S.R.L.</span>
         <span>CUI: 43678075 · J51/101/2021 · EUID: ROONRC.J51/101/2021</span>
-        <nav className="footer-legal-links" aria-label="Confidențialitate">
+        <nav className="footer-legal-links" aria-label="Informații legale">
+          <Link to="/politica-de-confidentialitate/">Politica de confidențialitate</Link>
           <Link to="/politica-de-cookies/">Politica de cookie-uri</Link>
+          <Link to="/termeni-si-conditii/">Termeni și condiții</Link>
+          <a href="/sitemap.xml">Sitemap XML</a>
           <button type="button" onClick={openCookieSettings}>Setări cookie</button>
         </nav>
         <a href="https://digitalromanian.com" target="_blank" rel="noreferrer">Creat și dezvoltat de digitalromanian.com</a>
